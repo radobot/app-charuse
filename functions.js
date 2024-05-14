@@ -920,8 +920,14 @@ function showLanguage (lang) {
     <a href="../scripts/fontlist/index.html?script=${ langs[lang].script }" target="_blank">Font lister</a> • `
     if (langs[lang].picker) out += `<a href="../pickers/${langs[lang].picker}/index.html" target="_blank">Picker</a> • `
     if (langs[lang].linked) out += `<a href="../scripts/${langs[lang].linked}.html" target="_blank">Orthography description</a> • `
-    out += `<a href="../scripts/links.html?iso=${ langs[lang].script }" target="_blank">Other links</a>
-    </td>
+    out += `<a href="../scripts/links.html?iso=${ langs[lang].script }" target="_blank">Other links</a><br>
+    
+    Triage: <a href="../scripts/apps/listcategories/index.html?chars=${ encodeURIComponent(cumulative)}" target="_blank">General category</a> •
+    <a href="../scripts/apps/listbidi/index.html?chars=${ encodeURIComponent(cumulative)}" target="_blank">Bidi class</a> •
+    <a href="../scripts/apps/listlinebreak/index.html?chars=${ encodeURIComponent(cumulative)}" target="_blank">Linebreak property</a> •
+    <a href="../scripts/apps/listindic/index.html?chars=${ encodeURIComponent(cumulative)}" target="_blank">Indic category</a> •
+
+</td>
     </tr>`
 
 
