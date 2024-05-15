@@ -78,6 +78,7 @@ var scriptData = {
 'shrd':{ name:'Sharada', block:"" },
 'shaw':{ name:'Shavian', block:"" },
 'sinh':{ name:'Sinhala', block:"sinh" },
+'sora':{ name:'Sora Sompeng', block:"sora" },
 'sund':{ name:'Sundanese', block:"sund" },
 'sunu':{ name:'Sunuwar', block:"sunu" },
 'syrc':{ name:'Syriac', block:"syrc" },
@@ -925,7 +926,7 @@ function showLanguage (lang) {
     Triage: <a href="../scripts/apps/listcategories/index.html?chars=${ encodeURIComponent(cumulative)}" target="_blank">General category</a> •
     <a href="../scripts/apps/listbidi/index.html?chars=${ encodeURIComponent(cumulative)}" target="_blank">Bidi class</a> •
     <a href="../scripts/apps/listlinebreak/index.html?chars=${ encodeURIComponent(cumulative)}" target="_blank">Linebreak property</a> •
-    <a href="../scripts/apps/listindic/index.html?chars=${ encodeURIComponent(cumulative)}" target="_blank">Indic category</a> •
+    <a href="../scripts/apps/listindic/index.html?chars=${ encodeURIComponent(cumulative)}" target="_blank">Indic category</a>
 
 </td>
     </tr>`
