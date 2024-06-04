@@ -541,6 +541,20 @@ also:
 'ccp-latn | latn | ']
 },
 
+"ccp": { name:"Chakma", local:"𑄌𑄋𑄴𑄟𑄳𑄦 𑄞𑄌𑄴", localtrans:"(changmha bhach)", 
+source:"cldr_ccp,udhr_ccp", 
+region:"sasia", countries:"Bangladesh, India", script:"cakm", speakers:"330000", 
+letter:"𑄃𑄄𑄅𑄆𑄇𑄈𑄉𑄊𑄋𑄌𑄍𑄎𑄏𑄐𑄑𑄒𑄓𑄔𑄕𑄖𑄗𑄘𑄙𑄚𑄛𑄜𑄝𑄞𑄟𑄠𑄡𑄢𑄣𑄤𑄥𑄦𑅇", letteraux:"𑅄", mark:"͏𑄀𑄁𑄂𑄧𑄨𑄩𑄪𑄫𑄬𑄭𑄮𑄯𑄰𑄱𑄲𑄳𑄴", markaux:"𑅅𑅆", number:"০১২৩৪৫৬৭৮৯𑄶𑄷𑄸𑄹𑄺𑄻𑄼𑄽𑄾𑄿", punctuation:"𑅀𑅁𑅂𑅃", other:"‌‍⁠", 
+orth:`[Chakma] &nbsp; `,
+also:
+["ccp-beng | beng | ",
+"ccp-latn | latn | "],
+notes:`UDHR uses Chakma digits, whereas CLDR shows only Bengali digits.`,
+type:"abugida", cs:"no", gpos:"yes", gsub:"yes", cursive:"no", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"ltr",  justification:"?", 
+vowels:"inh:1 vs:12 ind:4 base:A pre:1 circ:2",  clusters:"vir stk cnj lig",  finals:"cm:2", 
+linked:"cakm/ccp", fonts:"cakm-ccp", font:"Noto Sans Chakma", 
+},
+
 "ce": { name:"Chechen", silcode:"che", source:"cldr_ce", region:"eur", countries:"Russia", script:"cyrl", speakers:"1400000", letter:"аьбвгӏдеёжзийкхлмнопрстуфцчшщъыэюяАЬБВГӀДЕЁЖЗИЙКХЛМНОПРСТУФЦЧШЩЪЫЭЮЯ", mark:"̈̆","number":"", punctuation:"‐–—…‘‚“„«»§", local:"нохчийн мотт", localtrans:"[ˈnɔx.t͡ʃiːn mu͜ɔt]", 
 orth:`[Cyrillic] &nbsp; `,
 also:
