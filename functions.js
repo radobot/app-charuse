@@ -585,7 +585,8 @@ function drawCharacters (main, aux, lang) {
         name = 'U+'+cp+' '+charData[charList[j]]
         out += `<span title="${name }" class="c"`
         out += '>'
-        if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
+        //if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
+        if (langs[lang].script && langs[lang].script) out += `<a target="c" href="../scripts/${ langs[lang].script }/character.html?q=${ charList[j] }#${ lang }">${ charList[j] }</a>`
         else out += charList[j]
         out += '</span> ' 
         }
@@ -598,7 +599,7 @@ function drawCharacters (main, aux, lang) {
             name = 'U+'+cp+' '+charData[charList[j]]
             out += `<span title="${ name }" class="c small"`
             out += '>'
-            if (langs[lang].script && langs[lang].script) out += '<a target="c" href="../scripts/'+langs[lang].script+'/block.html#char'+cp+'">'+ charList[j]+'</a>'
+        	if (langs[lang].script && langs[lang].script) out += `<a target="c" href="../scripts/${ langs[lang].script }/character.html?q=${ charList[j] }#${ lang }">${ charList[j] }</a>`
             else out += charList[j]
             out += '</span> '
             }
