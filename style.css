@@ -154,9 +154,13 @@ sub { color:#C30; font-style: italic; }
 
 #output { color: #C33; margin: 1em 30% 2em 7.5%; line-height: 1.2em; }
 #output th { font-size: 50px; font-weight: normal; }
-#output th, #output td, #scriptMatchOutput th, #scriptMatchOutput td { text-align: left; vertical-align: top; padding: 10px; }
-#scriptMatchOutput th, #scriptMatchOutput td { font-size: 80%; }
+#output th, #output td { text-align: left; vertical-align: top; padding: 10px; }
 thead th { text-align: left; }
+
+#scriptMatchOutput th, #scriptMatchOutput td, #scriptMatchOutput tr { text-align: left; vertical-align: middle; padding: 10px; display: inline; border: 0; padding-inline-start: 0; padding-inline-end: 0.4em; }
+#scriptMatchOutput td { font-size: 80%; }
+#scriptMatchOutput th { font-size: 200%; font-weight: normal; color: #C33; }
+
 
 #langDetails { color: #C33; margin: 1em 7.5% 2em 7.5%; line-height: 1.2em; min-width: 70%;}
 #langDetails th { color:#777; font-weight: normal; }
@@ -192,6 +196,7 @@ thead th { text-align: left; }
 #output span, #languageByRegion span, #languageByScript span {
 	cursor: pointer;
     padding: 3px;
+    color: teal;
 	}
 #languageByRegion td, #languageByScript td {
     text-align: left;
@@ -423,7 +428,9 @@ img {
     }
 
 
-
+.totallanguages {
+    color: gray;
+    }
 
 
 

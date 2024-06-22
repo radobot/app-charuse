@@ -255,7 +255,7 @@ function findChars (str) {
 			out += '<tr><th>'+chars[i]+'</td>'
             scriptout += '<tr><th>'+chars[i]+'</td>'
 			if (cl[cp]) {
-				out += '<td>'
+				out += '<td style="background:white;">'
 				scriptout += '<td>'
 				languages = cl[cp][0]
 				auxlanguages = cl[cp][1]
@@ -264,7 +264,7 @@ function findChars (str) {
 				var population = 0
 				for (let l=0;l<languages.length;l++) {
 					languageNames += `<span onclick="showLanguage('${ languages[l] }')">${ langs[languages[l]].name.replace(/ \([^\)]+\)/g,'') }</span>`
-					if (l<languages.length-1) languageNames += ', '
+					if (l<languages.length-1) languageNames += ' • '
 					speakerNum = langs[languages[l]].speakers.replace(/~/,'')
 					speakerNum = speakerNum.replace(/\?/,'0')
 					population += parseInt(speakerNum)
@@ -286,7 +286,7 @@ function findChars (str) {
                     if (l<auxlanguages.length-1) scriptNames += '§'
 					}
                 totallanguages = languages.length+auxlanguages.length
-				out += totallanguages+' languages: '+languageNames+'</td>'
+				out += `<bdi class="totallanguages">${ totallanguages} languages:</bdi> ${ languageNames }</td>`
 				out += '<td>'+population.toLocaleString('en')+'</td>'
                 
                 // prepare the script info
