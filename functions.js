@@ -212,7 +212,7 @@ function listLangsByScript () {
     var out = ''
     for (s in scriptData) {
         if (scriptData[s].langs) {
-            out += `<tr><th>${ scriptData[s].name }</th><td><i class="leadin">${ scriptData[s].langs.length } &nbsp;languages:</i> `
+            out += `<tr id="${ scriptData[s].name.toLowerCase().replace(/ /g,'_') }"><th>${ scriptData[s].name }</th><td><i class="leadin">${ scriptData[s].langs.length } &nbsp;languages:</i> `
             for (let l=0;l<scriptData[s].langs.length;l++ ) {
                out += `<span onclick="showLanguage('${ scriptData[s].langs[l] }');`
                out += `document.getElementById('langByScriptDetail').open = false;">${ langs[scriptData[s].langs[l]].name.replace(/ \([^\)]+\)/g,'') }</span>`
@@ -1062,6 +1062,12 @@ function initialise () {
 			if (pairs[1]) { 
 				document.getElementById('languageSelector').value = pairs[1]
 				showLanguage(pairs[1])
+				}
+			}
+		if (pairs[0] === 'script') { 
+			if (pairs[1]) {
+                document.getElementById('langByScriptDetail').open = true
+				document.location = '#'+pairs[1]
 				}
 			}
 		}
