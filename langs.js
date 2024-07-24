@@ -1895,9 +1895,32 @@ notes:`Need to check the difference between pa-arab and pnb.`
 
 "pbb": { name:"Páez (Paez, Paes, Nasa Yuwe)", source:"udhr_pbb", region:"sam", countries:"Colombia", script:"latn", speakers:"40000", letter:"üëäïáÜËÄÏÁ", mark:"̈́", local:"Nasa Yuwe"},
 
-"pbu": { name:"Northern Pashto", rtl:true, source:"cldr_ps", region:"casia", countries:"Pakistan, Afghanistan, UAE", script:"arab", speakers:"20850900", letter:"آاأءبپتټثجځچڅحخدډذرړزژږسشښصضطظعغفقکګگلمنڼهةوؤیيېۍئ", mark:"ًٌٍَُِّْٰٔٓ", punctuation:"٫٬٪؉‰","number":"۰۱۲۳۴۵۶۷۸۹", symbol:"−", local:"پښتو‎", localtrans:"(pashto)", 
-related:`Macrolanguage is Pashto [ps]. Legacy applications often use ps rather pbu.`,
-orth:`Arabic. &nbsp; Primary usage is naskh style, but nastaliq ([Aran]) also used.`},
+"pbt": { name:"Southern Pashto (Pushtu, Pushto)", local:"پښتو", localtrans:"Pax̌tó", silcode:"pus",
+source:"r12a", 
+region:"casia", countries:"Afghanistan", script:"arab", speakers:"~50000000", 
+letter:"آئابتثجحخدذرزسشصضطظعغفقلمنهويټپځڅچډړږژښکگڼیۍې", letteraux:"", mark:"َُِٙ", markaux:"͏ًٓٔ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"«»،؛؟٪٬‘’“”…", other:"\u061C\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
+orth:`[Arabic] Characters typically used in Afghanistan. <a href='../scripts/arab/ps.html' target='_blank'>Details</a>. `,
+related:`ps is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Southern Pashto [pbt]<br/>Northern Pashto [pbu]<br/>Central Pashto [pst].
+Legacy applications often use ps rather than [pbu].
+`,
+type:"abjad", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"rtl",  justification:"?", 
+vowels:"ml:y hcm:y", 
+linked:"arab/ps", fonts:"arab-ps", font:"Scheherazade", 
+},
+
+"pbu": { name:"Northern Pashto (Pushtu, Pushto)", local:"پښتو", localtrans:"Pax̌tó", silcode:"pbu",  rtl:true,
+source:"r12a,cldr_ps", 
+region:"casia", countries:"Pakistan, Afghanistan, UAE", script:"arab", speakers:"20850900", 
+letter:"آئابتثجحخدذرزسشصضطظعغفقلمنهويټپځڅچډړږژښکګڼۀیۍېے", letteraux:"ە", mark:"َُِٙ", markaux:"͏ًٓٔ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"«»،؛؟٪٬‘’“”…", other:"\u061C\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
+orth:`[Arabic]  &nbsp; Characters typically used in the Peshawar region. Primary usage is naskh style, but nastaliq ([Aran]) also used. <a href='../scripts/arab/ps.html' target='_blank'>Details</a>. `,
+related:`ps is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Southern Pashto [pbt]<br/>Northern Pashto [pbu]<br/>Central Pashto [pst].
+Legacy applications often use ps rather than [pbu].
+`,
+type:"abjad", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"rtl",  justification:"?", 
+vowels:"ml:y hcm:y", 
+linked:"arab/ps", fonts:"arab-ps", font:"Scheherazade", 
+},
+
 
 "pcd": { name:"Picard", source:"udhr_pcd", region:"eur", countries:"France, Belgium", script:"latn", speakers:"700000", letter:"èåûîéôçÈÅÛÎÉÔÇ", mark:"̧̀̊̂́", symbol:"°"},
 
@@ -1948,6 +1971,19 @@ orth:`Arabic &nbsp; Naskh style used in print. Nastaliq style ([Aran]) used in h
 "ps": { name:"Pashto (Pushtu, Pushto)", silcode:"pus", redirect:true, source:"", region:"casia", script:"macrolanguage", speakers:"~50000000", related:`ps is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Southern Pashto [pbt]<br/>Northern Pashto [pbu]<br/>Central Pashto [pst].
 Legacy applications often use ps rather than [pbu].
 `},
+
+"ps": { name:"Pashto (Pushtu, Pushto)", local:"پښتو", localtrans:"Pax̌tó", silcode:"pus", redirect:true, 
+source:"r12a", 
+region:"casia", countries:"Afghanistan, Pakistan", script:"macrolanguage", speakers:"~50000000", 
+letter:"آئابتثجحخدذرزسشصضطظعغفقلمنهويټپځڅچډړږژښکګگڼۀیۍېے", letteraux:"كںە", mark:"͏ً", markaux:"͏َُِٓٔٙ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"«»،؛؟٪٬‘’“”…", other:"\u061C\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
+orth:`[Arabic] This entry reflects characters recommended by both Afghan and Peshawar authorities. There exist a small number of regional differences. <a href='../scripts/arab/ps.html' target='_blank'>Details</a>. `,
+related:`ps is a macrolanguage that encompasses the following more specific primary language subtags:<br/>Southern Pashto [pbt]<br/>Northern Pashto [pbu]<br/>Central Pashto [pst].
+Legacy applications often use ps rather than [pbu].
+`,
+type:"abjad", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", wordsep:"space", baseline:"mid", wrap:"word", hyphenation:"?",  direction:"rtl",  justification:"?", 
+vowels:"ml:y hcm:y", 
+linked:"arab/ps", fonts:"arab-ps", font:"Scheherazade", 
+},
 
 "pt": { name:"Portuguese", silcode:"por", source:"cldr_pt,udhr_por_PT,udhr_por_BR", region:"eur", countries:"Portugal, Brazil, Angola, Mozambique, etc.", script:"latn", speakers:"215000000", letter:"áàâãçéêíóòôõúºÁÀÂÃÇÉÊÍÓÒÔÕÚ", mark:"̧́̀̂̃", punctuation:"§‐–—…‘’“”†‡′″", aux:"ăāĕēĭīŏōœŭūĂĀĔĒĬĪŎŌŒŬŪŸªåäæèëìîïñºöøùûüÿÅÄÆÈËÌÎÏÑÖØÙÛÜ̆̊̈̄", local:"Português"},
 
