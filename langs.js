@@ -2193,12 +2193,18 @@ linked:"sinh/si", picker:"sinh",
 
 "sk": { name:"Slovak", silcode:"slk", source:"cldr_sk,udhr_slk", region:"eur", countries:"Slovakia, Czechia, Serbia", script:"latn", speakers:"5200000", letter:"čďĺľňŕšťžűČĎĹĽŇŔŠŤŽŰáäéíóôúýÁÄÉÍÓÔÚÝ", mark:"́̈̌̂̋", punctuation:"‐–…‘‚“„§", aux:"ăāĕēĭīŏōœřŭūĂĀĔĒĬĪŎŌŒŘŬŪŸàâåæçèêëìîïñòöøùûüÿÀÂÅÆÇÈÊËÌÎÏÑÒÖØÙÛǛ̧̆̊̄̃", local:"Slovenský Jazyk / Slovenčina"},
 
-"skr": { name:"Saraiki (Siraiki, Seraiki)", rtl:true, source:"udhr_skr", region:"sasia", countries:"Pakistan, India", script:"arab", speakers:"20000000", letter:"انسیحقودعلمشرپہڱھےکڄئتڻزںگڈفظجچبڑصڋخڔٹطآذضغةثٻي", mark:"ُٔٓ", punctuation:"۔،","number":"۱۲۳۴۵۶۷۸۹۰", local:"سرائیکی‎", localtrans:"(saraiki)", 
-orth:`Arabic. &nbsp; Naskh and nastaliq ([Aran]) styles. Primary usage.`,
+"skr": { name:"Saraiki (Siraiki, Seraiki)", local:"سرائیکی‎", localtrans:"sə.ˈɾɛːkiː", silcode:"skr", rtl:true, 
+source:"r12a, udhr_skr", 
+region:"sasia", countries:"Pakistan", script:"arab", speakers:"30000000", 
+letter:"آؤئابتثجحخدذرزسشصضطظعغفقلمنوٹٻپڄچڈڑژکگڳںھہیےۓݙݨ", letteraux:"ي", mark:"ٍَُِ٘", markaux:"ًٌّْٰٖٓٔٗ", number:"۰۱۲۳۴۵۶۷۸۹", punctuation:"،؛؟۔", symbol:"", other:"\u200C\u200D\u200E\u200F\u202A\u202B\u202C\u2066\u2067\u2068\u2069", 
+orth:`Arabic. &nbsp; Nastaliq ([Aran]) style. Primary usage.`,
 also:
 ['skr-deva | deva | No longer in use.',
 'skr-guru | guru | No longer in use.',
-'skr-khoj | khoj | ']
+'skr-khoj | khoj | '],
+type:"abjad", cs:"no", gpos:"yes", gsub:"yes", cursive:"yes", wordsep:"space", baseline:"romn", wrap:"word", hyphenation:"?",  direction:"rtl",  justification:"?", 
+vowels:"ml:10 hcm:12", 
+linked:"arab/skr", fonts:"arab-skr", font:"Noto Nastaliq Urdu", 
 },
 
 "sl": { name:"Slovene (Slovenian)", silcode:"slv", source:"cldr_sl,udhr_slv", region:"eur", countries:"Slovenia, Italy", script:"latn", speakers:"2500000", letter:"čšžČŠŽ", mark:"̌", aux:"ăāćđĕēĭīŏōœŭūĂĀĆĐĔĒĬĪŎŌŒŬŪŸáàâåäæçéèêëíìîïñóòôöøúùûüÿÁÀÂÅÄÆÇÉÈÊËÍÌÎÏÑÓÒÔÖØÚÙÛǗ̧̀̆̂̊̈̄̃", local:"Slovenski jezik / Slovenščina"},
